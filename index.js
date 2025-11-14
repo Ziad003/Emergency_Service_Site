@@ -71,3 +71,9 @@ function historyFun(){
     history.appendChild(div);
 }
 }
+
+document.getElementById('clearBtn')
+.addEventListener('click',function(){
+    historyData=[];
+    document.getElementById('historyContainer').innerHTML=``;
+})
