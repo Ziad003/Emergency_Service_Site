@@ -77,3 +77,24 @@ document.getElementById('clearBtn')
     historyData=[];
     document.getElementById('historyContainer').innerHTML=``;
 })
+
+
+//Copy functionality
+let cpBtns=document.getElementsByClassName('copyBtn');
+for(let cpBtn of cpBtns){
+    cpBtn.addEventListener('click',function(){
+        let root=cpBtn.parentElement.parentElement;
+        let child=root.querySelector('h1');
+        let number=child.innerText;
+        
+        //Line for copy number
+        navigator.clipboard.writeText(number);
+
+        alert(`the number: ${number} has been copied...`);
+
+        let cpCount=document.getElementById('copyCount');
+        cpCount.innerText=parseInt(cpCount.innerText)+1;
+
+        
+    })
+}

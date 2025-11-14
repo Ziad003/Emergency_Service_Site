@@ -27,7 +27,7 @@
             <img src="./assets/coin.png" alt="" class="h-6 w-6">
         </div>
         <div class="copyDiv md:h-[52px] md:w-[127px] h-[52px] w-[100px] rounded-3xl flex justify-center items-center bg-[#00A63E] text-white">
-            <p><span class="copy">0 </span>Copy</p>
+            <p><span id="copyCount" class="copy">0</span> Copy</p>
         </div>
     </div>
   </div>
@@ -58,7 +58,7 @@
                     <p class="text-gray-500">All</p>
                 </div>
                 <div class="flex justify-between gap-1 w-full cursor-pointer">
-                    <button id="nationalEmergencyCopyBtn" class="text-gray-500 md:w-[182px] w-[90px] border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-300 active:bg-gray-500 active:text-white">
+                    <button id="nationalEmergencyCopyBtn" class="copyBtn text-gray-500 md:w-[182px] w-[90px] border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-300 active:bg-gray-500 active:text-white">
                         <i class="fa-regular fa-copy"></i>
                         Copy
                     </button>
@@ -85,7 +85,7 @@
                     <p class="text-gray-500">Police</p>
                 </div>
                 <div class="flex justify-between gap-1 w-full">
-                    <button id="policeHelpCopyBtn" class="text-gray-500 md:w-[182px] w-[90px] border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-300 active:bg-gray-500 active:text-white">
+                    <button id="policeHelpCopyBtn" class="copyBtn text-gray-500 md:w-[182px] w-[90px] border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-300 active:bg-gray-500 active:text-white">
                         <i class="fa-regular fa-copy"></i>
                         Copy
                     </button>
@@ -112,7 +112,7 @@
                     <p class="text-gray-500">Fire</p>
                 </div>
                 <div class="flex justify-between gap-1 w-full">
-                    <button id="fireSerciveCopyBtn" class="text-gray-500 md:w-[182px] w-[90px] border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-300 active:bg-gray-500 active:text-white">
+                    <button id="fireSerciveCopyBtn" class="copyBtn text-gray-500 md:w-[182px] w-[90px] border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-300 active:bg-gray-500 active:text-white">
                         <i class="fa-regular fa-copy"></i>
                         Copy
                     </button>
@@ -139,7 +139,7 @@
                     <p class="text-gray-500">Health</p>
                 </div>
                 <div class="flex justify-between gap-1 w-full">
-                    <button id="ambulanceCopyBtn" class="text-gray-500 md:w-[182px] w-[90px] border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-300 active:bg-gray-500 active:text-white">
+                    <button id="ambulanceCopyBtn" class="copyBtn text-gray-500 md:w-[182px] w-[90px] border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-300 active:bg-gray-500 active:text-white">
                         <i class="fa-regular fa-copy"></i>
                         Copy
                     </button>
@@ -166,7 +166,7 @@
                     <p class="text-gray-500">Help</p>
                 </div>
                 <div class="flex justify-between gap-1 w-full">
-                    <button id="women&ChildCopyBtn" class="text-gray-500 md:w-[182px] w-[90px] border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-300 active:bg-gray-500 active:text-white">
+                    <button id="women&ChildCopyBtn" class="copyBtn text-gray-500 md:w-[182px] w-[90px] border border-gray-300 rounded-lg cursor-pointer hover:bg-gray-300 active:bg-gray-500 active:text-white">
                         <i class="fa-regular fa-copy"></i>
                         Copy
                     </button>
@@ -193,7 +193,7 @@
                     <p class="text-gray-500">govt.</p>
                 </div>
                 <div class="flex justify-between gap-1 w-full">
-                    <button id="antiCorruptionCopyBtn" class="text-gray-500 md:w-[182px] w-[90px] border border-gray-300 rounded-lg cursor-pointer  hover:bg-gray-300 active:bg-gray-500 active:text-white">
+                    <button id="antiCorruptionCopyBtn" class="copyBtn text-gray-500 md:w-[182px] w-[90px] border border-gray-300 rounded-lg cursor-pointer  hover:bg-gray-300 active:bg-gray-500 active:text-white">
                         <i class="fa-regular fa-copy"></i>
                         Copy
                     </button>
@@ -220,7 +220,7 @@
                     <p class="text-gray-500">Electricity</p>
                 </div>
                 <div class="flex justify-between gap-1 w-full">
-                    <button id="electricityCopyBtn" class="text-gray-500 md:w-[182px] w-[90px] border border-gray-300 rounded-lg cursor-pointer  hover:bg-gray-300 active:bg-gray-500 active:text-white">
+                    <button id="electricityCopyBtn" class="copyBtn text-gray-500 md:w-[182px] w-[90px] border border-gray-300 rounded-lg cursor-pointer  hover:bg-gray-300 active:bg-gray-500 active:text-white">
                         <i class="fa-regular fa-copy"></i>
                         Copy
                     </button>
@@ -247,7 +247,7 @@
                     <p class="text-gray-500">NGO</p>
                 </div>
                 <div class="flex justify-between gap-1 w-full">
-                    <button id="brackCopyBtn" class="text-gray-500 md:w-[182px] w-[90px] border border-gray-300 rounded-lg cursor-pointer  hover:bg-gray-300 active:bg-gray-500 active:text-white">
+                    <button id="brackCopyBtn" class="copyBtn text-gray-500 md:w-[182px] w-[90px] border border-gray-300 rounded-lg cursor-pointer  hover:bg-gray-300 active:bg-gray-500 active:text-white">
                         <i class="fa-regular fa-copy"></i>
                         Copy
                     </button>
@@ -274,7 +274,7 @@
                     <p class="text-gray-500">Travel</p>
                 </div>
                 <div class="flex justify-between gap-1 w-full">
-                    <button id="railwayCopyBtn" class="text-gray-500 md:w-[182px] w-[90px] border border-gray-300 rounded-lg cursor-pointer  hover:bg-gray-300 active:bg-gray-500 active:text-white">
+                    <button id="railwayCopyBtn" class="copyBtn text-gray-500 md:w-[182px] w-[90px] border border-gray-300 rounded-lg cursor-pointer  hover:bg-gray-300 active:bg-gray-500 active:text-white">
                         <i class="fa-regular fa-copy"></i>
                         Copy
                     </button>
